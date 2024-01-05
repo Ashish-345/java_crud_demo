@@ -30,7 +30,7 @@ pipeline {
                 mvn --version
                 mvn clean
                 mvn install
-                aws s3 cp /var/lib/jenkins/workspace/ci-cd-all-env/CrudDemoWithMySql/target/CrudDemoWithMySql-0.0.1-SNAPSHOT.war s3://ashish-crude-demo/
+                aws s3 cp /var/lib/jenkins/workspace/cicd-job/CrudDemoWithMySql/target/CrudDemoWithMySql-0.0.1-SNAPSHOT.war s3://ashish-crude-demo/
                 '''
             }
         }
